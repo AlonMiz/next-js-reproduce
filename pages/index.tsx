@@ -13,6 +13,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <a target="_blank" href="https://github.com/AlonMiz/next-js-reproduce" rel="noreferrer">
+          Source code https://github.com/AlonMiz/next-js-reproduce
+        </a>
+        <br />
+
         <Used />
         <br />
         <a target="_blank" href="/api/1">
