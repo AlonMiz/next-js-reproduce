@@ -20,7 +20,7 @@ export default function Home() {
         </a>
         <br />
         <a target="_blank" href="/api/revalidate">
-          revalidate
+          revalidate api/1
         </a>
         <br />
 
