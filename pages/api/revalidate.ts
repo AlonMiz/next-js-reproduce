@@ -7,9 +7,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const path = `/api/${req.query.id || 1}`;
     await res.revalidate(path);
     return res.json({ revalidated: true, path: path });
-  } catch (err) {
+  } catch (err: any) {
     // If there was an error, Next.js will continue
     // to show the last successfully generated page
-    return res.status(500).send('Error revalidating');
+    return res.status(500).send(
+      JSON.stringify({
+        error: err.message,
+        message: 'Error revalidating',
+      })
+    );
   }
 }

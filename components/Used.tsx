@@ -1,3 +1,3 @@
 export const Used = () => {
-  return <div>Used component</div>;
+  return <div>this is a used component</div>;
 };

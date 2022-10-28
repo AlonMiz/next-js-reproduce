@@ -1,3 +1,3 @@
 export const Unused = () => {
-  return <div>Unused component</div>;
+  return <div>this is an unused component</div>;
 };
