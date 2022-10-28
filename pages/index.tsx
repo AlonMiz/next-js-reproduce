@@ -15,12 +15,18 @@ export default function Home() {
       <main className={styles.main}>
         <Used />
         <br />
-        <a href="/api/1">get api/1</a>
+        <a target="_blank" href="/api/1">
+          get api/1
+        </a>
         <br />
-        <a href="/api/revalidate">revalidate</a>
+        <a target="_blank" href="/api/revalidate">
+          revalidate
+        </a>
         <br />
 
-        <a href="/api/files">get some files content</a>
+        <a target="_blank" href="/api/files">
+          get some files content
+        </a>
       </main>
     </div>
   );
